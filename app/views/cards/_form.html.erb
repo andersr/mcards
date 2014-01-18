@@ -1,0 +1,7 @@
+<%= form_for @card do |f| %>
+<p><%= f.label :phrase %>
+</p>
+<%= f.text_area :phrase, rows: 10, cols: 25 %>
+<br>
+<%= f.submit %>
+<% end %>

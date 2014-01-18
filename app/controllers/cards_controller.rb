@@ -29,6 +29,18 @@ class CardsController < ApplicationController
   end
 
   def update
+    @card = Card.find(params[:id])
+
+    respond_to do |format|
+      if @card.save
+        format.html {
+          redirect_to card_path(@card), notice: "Card updated!" }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit", notice: "Sorry, there was a problem :-/" }
+        format.json { render json: @card.errors, status: :unprocessable_entity }
+      end
+    end
     
   end
 
@@ -37,7 +49,7 @@ class CardsController < ApplicationController
   end
 
   def edit
-    
+    @card = Card.find(params[:id])
   end
 
   private
