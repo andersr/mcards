@@ -1,5 +1,6 @@
 Mcards::Application.routes.draw do
-  root "cards#index"
+  root "cards#random"
+  get "cards/random" => "cards#random"
 
   resources :cards
 

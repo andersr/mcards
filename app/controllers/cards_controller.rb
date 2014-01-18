@@ -52,6 +52,11 @@ class CardsController < ApplicationController
     @card = Card.find(params[:id])
   end
 
+  def random
+    id = rand(1..Card.count)
+    @card = Card.find(id)
+  end
+
   private
 
     def card_params
