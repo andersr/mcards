@@ -25,7 +25,9 @@ article {
   h1 {
     display: block;
   //font-size: 60px;
-  font: 150px/1 "Impact";
+  font: 150px;
+  line-height: 1.2;
+  font-family: 'Rosarivo', sans-serif;
   padding: 20px;
   color:#333;
   z-index: 1;
