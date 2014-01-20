@@ -1,0 +1,1 @@
+// jQuery(".fit-text").fitText(1.2); 
