@@ -4,48 +4,21 @@ html{
 }
 body {
   min-height: 100%;
-  background-color: #eeeeee;
-  position: relative;
-  font-size: 16px;
-  font: 16px/1.8 sans-serif;
-  //font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #ffffff;
   margin:0;
   padding:0;
 }
 
 article {
-  background-color: #ffffff;
-  display: block;
-  position:absolute;
-  height:auto;
-  bottom:0; top:0; left:0; right:0;
-   margin:0;
-  //text-align: center;
-   //overflow: auto;
 
   h1 {
     display: block;
-  //font-size: 60px;
-  font: 150px;
-  line-height: 1.3;
-  font-family: 'Rosarivo', sans-serif;
+  font-family: 'Rosarivo', Arial, "Helvetica Neue", Helvetica, sans-serif;
   padding:0;
   margin: 0;
   color:#333;
   z-index: 1;
 }
-
-
-  // h1 {
-  // font-size: 4vw;
-    
-  // }
-
-
-  // h1 {
-  //   font-size: 4em;
-  
-  // }
 
   form {
     height: 100%;
@@ -57,7 +30,8 @@ button {
       border:none; 
       background-color:#ffffff;
       cursor:pointer;
-      padding:5%;
+      padding:3em 5em;
+
       text-align: left;
 
       &:focus {
