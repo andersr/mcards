@@ -1,15 +1,38 @@
 cards = Card.create([
-  {phrase:"Smile for no reason :-)"},
-  {phrase:"Breeeeathe..."},
-  {phrase:'Is there someone you are holding a grudge against? Take a minute and visualize this person in your mind, letting go of negative emotions.'},
-  {phrase:"Remember, joy comes from within. No one else can make you happy."},
-  {phrase:"Give yourself credit for a recent achievement. You are doing the best you can, every day."},
-  {phrase:"What's something you're dreaming of achieving?  Take a minute and visualize yourself having already achieved it."},
-  {phrase:"Take joy in the success of others."},
-  {phrase:"Today, decide to help someone without expecting anything in return"},
-  {phrase:"Today, try reacting with kindness to people who annoy you."},
-  {phrase:"Is there someone who recently upset you in some way?  Take a minute and visualize them in your mind, letting go of negative emotions."},
-  {phrase:"Today, find one or more physical items in your home that you can give away to a charity."},
-  {phrase:"What is something you are dreaming of achieving? Think of one small step you can take today to bring you closer toward your goal."},
-  {phrase:"Are you feeling anxious? Close your eyes and visualize your anxieties drifting away from you."}
+  { phrase:"Smile for no reason :-)",
+    help:"Today, whenever you feel down or anxious, bring a smile to your face.  It sounds weird but just try it."},
+
+  { phrase:"Breeeeathe...",
+    help: "Take a minute and focus on your breath, slowly breathing in and out, letting your body relax."},
+
+  { phrase:"Is there someone you are holding a grudge against?",
+    help:"Take a minute and visualize this person in your mind, letting go of negative emotions."},
+
+  { phrase:"Remember, joy comes from within. No one else can make you happy."},
+
+  { phrase:"Give yourself credit for a recent achievement. You are doing the best you can, every day."},
+
+  { phrase:"What's something you're dreaming of achieving?", 
+    help:"Take a minute and visualize yourself having already achieved it."},
+
+  { phrase:"Take joy in the success of others.",
+    help:"Think of someone you know who recently has had a successful event in their life and cherish this success as if it were your own."},
+
+  { phrase:"Today, decide to help someone without expecting anything in return",
+    help: "During the day, look for opportunities to do a good deed just for its own sake and without anyone knowing you did it."},
+
+  { phrase:"Today, try reacting with kindness if you encounter people who annoy you.",
+    help:"If you find yourself becoming annoyed, become aware of your emotion and gently shift your emotions to feelings of empathy and understanding."},
+
+  { phrase:"Is there someone who recently upset you in some way?",
+    help:"If so, take a minute and visualize them in your mind, gently letting negative emotions drift away from you."},
+
+  { phrase:"Today, find one or more items in your home you can give away to a charity.",
+    help: "Set them aside and make a note of taking them to Goodwill or a similar charity."},
+
+  { phrase:"What is something you are dreaming of achieving?",
+    help:"Think of one small step you can take today to bring you closer toward your goal."},
+
+  { phrase:"Are you feeling anxious?", 
+    help:"Close your eyes, focus on your breath, acknowledge your anxious emotions, and visualizing your anxieties drifting away from you."}
   ])
