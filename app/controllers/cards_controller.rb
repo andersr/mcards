@@ -44,8 +44,26 @@ class CardsController < ApplicationController
     
   end
 
+  #  def destroy
+  #   @post = Post.find(params[:post_id])
+  #   @comment = Comment.find(params[:id])
+  #   @comment.destroy
+
+  #   respond_to do |format|
+  #     format.html { redirect_to post_comments_path(@post) }
+  #     format.xml  { head :ok }
+  #   end
+  # end
+
   def destroy
-    
+    @cards = Card.all
+    @card = Card.find(params[:id])
+    @card.destroy
+
+    respond_to do |format|
+      format.html { redirect_to cards_path, notice: "The card was deleted." }
+      format.xml {head :ok}
+    end
   end
 
   def edit
@@ -60,6 +78,6 @@ class CardsController < ApplicationController
   private
 
     def card_params
-      params.require(:card).permit(:phrase)
+      params.require(:card).permit(:phrase, :help)
     end
 end

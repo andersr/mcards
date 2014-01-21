@@ -1,3 +1,7 @@
+<h1>Cards</h1>
+<p><%= link_to "New Card", new_card_path %></p>
+<ul>
 <% @cards.each do |card|%>
-<p>Card <%= card.id %>:<%= card.phrase %></p>
-<% end %>
+  <li><%= card.id %>:<%= link_to card.phrase, card_path(card) %> | <%= link_to "Edit", edit_card_path(card) %> | <%= link_to "Delete", card_path(card), :method => :delete, :confirm => "Delete the card '#{card.phrase}'?" %></li>
+  <% end %>
+</ul>
