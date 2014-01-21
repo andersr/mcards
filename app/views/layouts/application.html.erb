@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Mcards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
   <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -16,9 +17,5 @@
       <% end %>
 
     <%= yield %>
-      <script type="text/javascript">
-    $(".fit-text-phrase").fitText(1.1, { minFontSize: '25px', maxFontSize: '55px' });
-    $(".fit-text-help").fitText(1.2, { minFontSize: '15px', maxFontSize: '30px' });
-  </script>
   </body>  
 </html>
