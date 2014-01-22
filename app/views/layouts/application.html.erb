@@ -18,7 +18,10 @@
 
     <%= yield %>
     <script async defer>
-      window.mySwipe = $('#card_collection').Swipe().data('Swipe');
+      window.mySwipe = $('#card_collection').Swipe({
+        speed: 400,
+        continuous: false }
+        ).data('Swipe');
     </script>
   </body>  
 </html>
