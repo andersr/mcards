@@ -1,16 +1,26 @@
 <article>
-    <div id="card_collection" class="swipe">
-      <div class="swipe-wrap">
+  <div id="card_collection" class="swipe">
+    <div class="swipe-wrap">
+      <div id="intro-card">
+        <button onclick='mySwipe.next()'>
+          <h1>Meditation Cards</h1>
+          <p>Spend a minute or so every morning with each of the following 5 cards. Your cards will be slightly different every time.</p>
+          <p>(Tap or swipe left to continue)</p>
+        </button>
+      </div>
       <% @random_cards.each do |card| %>
-        <div>
-        <!-- <form action="" method="get"> -->
-          <button onclick='mySwipe.next()'>
-            <h1 class="fit-text-phrase"><%= card.phrase %></h1>
-            <p class="fit-text-help"><%= card.help %></p>
-          </button>
-       <!--      </form> -->
-        </div>
+      <div>
+        <button onclick='mySwipe.next()'>
+          <h1><%= card.phrase %></h1>
+          <p><%= simple_format(card.help) %></p>
+        </button>
+      </div>
       <% end %>
+      <div>
+        <button>
+          <h1>Enjoy your day!</h1>
+        </button>
       </div>
     </div>
+  </div>
 </article>

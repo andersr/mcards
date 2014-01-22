@@ -1,9 +1,14 @@
 cards = Card.create([
-  { phrase:"Smile for no reason :-)",
-    help:"Today, whenever you feel down or anxious, bring a smile to your face.  It sounds weird but just try it."},
+  { phrase:"Meditation Cards",
+    help:"Spend a minute or so every morning with each of the following 5 cards. Your cards will be slightly different every time. Enjoy!
+
+    (Tap or swipe left to continue)"},
+
+  { phrase:"Smile :-)",
+    help:"Today, whenever you feel down or anxious, try simply smiling.  It sounds weird but just try it."},
 
   { phrase:"Breeeeathe...",
-    help: "Take a minute and focus on your breath, slowly breathing in and out, letting your body relax."},
+    help: "Take a minute and focus on your breath, slowly breathing in and out, letting your whole body relax."},
 
   { phrase:"Is there someone you are holding a grudge against?",
     help:"Take a minute and visualize this person in your mind, letting go of negative emotions."},
@@ -18,7 +23,7 @@ cards = Card.create([
   { phrase:"Take joy in the success of others.",
     help:"Think of someone you know who recently has had a successful event in their life and cherish this success as if it were your own."},
 
-  { phrase:"Today, decide to help someone without expecting anything in return",
+  { phrase:"Today, decide to help someone without expecting anything in return.",
     help: "During the day, look for opportunities to do a good deed just for its own sake and without anyone knowing you did it."},
 
   { phrase:"Today, try reacting with kindness if you encounter people who annoy you.",
@@ -28,9 +33,9 @@ cards = Card.create([
     help:"If so, take a minute and visualize them in your mind, gently letting negative emotions drift away from you."},
 
   { phrase:"Today, find one or more items in your home you can give away to a charity.",
-    help: "Set them aside and make a note of taking them to Goodwill or a similar charity."},
+    help: "Set them aside and make a note of taking them to a local charity."},
 
-  { phrase:"What is something you are dreaming of achieving?",
+  { phrase:"What is something you're dreaming of achieving?",
     help:"Think of one small step you can take today to bring you closer toward your goal."},
 
   { phrase:"Are you feeling anxious?", 

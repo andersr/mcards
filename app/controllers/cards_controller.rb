@@ -62,7 +62,8 @@ class CardsController < ApplicationController
   end
 
   def random
-    @random_cards = Card.all.sample(5)
+    @random_cards = []
+    @random_cards += Card.all.sample(5)
   end
 
   private
