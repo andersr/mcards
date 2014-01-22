@@ -1,7 +1,6 @@
 <article>
-  
-    <div id='mySwipe' class='swipe'>
-      <div class='swipe-wrap'>
+    <div id="card_collection" class="swipe">
+      <div class="swipe-wrap">
       <% @random_cards.each do |card| %>
         <div>
         <form action="<%= cards_random_path %>" method="get">

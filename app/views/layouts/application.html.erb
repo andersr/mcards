@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mcards</title>
+  <title>Meditation Cards</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
   <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -18,7 +18,7 @@
 
     <%= yield %>
     <script async defer>
-      window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+      window.mySwipe = $('#card_collection').Swipe().data('Swipe');
     </script>
   </body>  
 </html>
