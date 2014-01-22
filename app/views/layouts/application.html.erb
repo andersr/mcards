@@ -17,5 +17,8 @@
       <% end %>
 
     <%= yield %>
+    <script async defer>
+      window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+    </script>
   </body>  
 </html>

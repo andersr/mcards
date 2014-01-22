@@ -1,5 +1,17 @@
 <article>
-<form action="<%= cards_random_path %>" method="get">
-<%= render 'card_button' %>
-</form>
+  
+    <div id='mySwipe' class='swipe'>
+      <div class='swipe-wrap'>
+      <% @random_cards.each do |card| %>
+        <div>
+        <form action="<%= cards_random_path %>" method="get">
+          <button>
+            <h1 class="fit-text-phrase"><%= card.phrase %></h1>
+            <p class="fit-text-help"><%= card.help %></p>
+          </button>
+            </form>
+        </div>
+      <% end %>
+      </div>
+    </div>
 </article>

@@ -44,17 +44,6 @@ class CardsController < ApplicationController
     
   end
 
-  #  def destroy
-  #   @post = Post.find(params[:post_id])
-  #   @comment = Comment.find(params[:id])
-  #   @comment.destroy
-
-  #   respond_to do |format|
-  #     format.html { redirect_to post_comments_path(@post) }
-  #     format.xml  { head :ok }
-  #   end
-  # end
-
   def destroy
     @cards = Card.all
     @card = Card.find(params[:id])
@@ -71,8 +60,7 @@ class CardsController < ApplicationController
   end
 
   def random
-    id = rand(1..Card.count)
-    @card = Card.find(id)
+    @random_cards = Card.all.sample(5)
   end
 
   private
