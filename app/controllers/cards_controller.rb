@@ -1,5 +1,7 @@
 class CardsController < ApplicationController
 
+  skip_before_filter :authenticate, :only => [:random]
+
 
   def show
     @card = Card.find(params[:id])
