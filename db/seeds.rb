@@ -1,9 +1,4 @@
 cards = Card.create([
-  { phrase:"Meditation Cards",
-    help:"Spend a minute or so every morning with each of the following 5 cards. Your cards will be slightly different every time. Enjoy!
-
-    (Tap or swipe left to continue)"},
-
   { phrase:"Smile :-)",
     help:"Today, whenever you feel down or anxious, try simply smiling.  It sounds weird but just try it."},
 
