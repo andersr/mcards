@@ -34,5 +34,5 @@ cards = Card.create([
     help:"Think of one small step you can take today to bring you closer toward your goal."},
 
   { phrase:"Are you feeling anxious?", 
-    help:"Close your eyes, focus on your breath, acknowledge your anxious emotions, and visualizing your anxieties drifting away from you."}
+    help:"Close your eyes, focus on your breath, acknowledge your anxious emotions, then visualize them drifting away from you."}
   ])
