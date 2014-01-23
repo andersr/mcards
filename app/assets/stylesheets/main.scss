@@ -1,4 +1,7 @@
 @import "variables";
+@import "utility_classes";
+@import "icomoon";
+@import "swipejs";
 
 
 // http://stackoverflow.com/questions/6654958/make-body-have-100-of-the-browser-height 
@@ -29,6 +32,29 @@ a {
     text-decoration: underline;
   }
 
+  [class^="icon-"], [class*=" icon-"] {
+
+      &:hover {
+        color:lighten( $link-color, 10% );
+        cursor: pointer;
+        text-decoration: none;
+    }
+  }
+}
+
+
+img {
+  &.icon {
+    height: 1.3em;
+    width: auto;
+    fill: none;
+    pointer-events: all;
+
+    &:hover {
+      fill: red;
+
+    }
+  }
 }
 article {
   
@@ -74,15 +100,46 @@ button {
     } //button
   } // article
 
-@import "swipejs";
-
 footer, .push {
-height: 2em;
-padding-left: 2em;
-padding-right: 2em;
-padding-top: 1em;
-font-size: .8em;
-color: $light-gray;
+  //display: table;
+  
+  height: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  font-size: .8em;
+  color: $light-gray;
+
+  table {
+    width: 100%;
+     tr {
+
+    td {
+      height: 2em;
+      vertical-align: middle;
+      .copyright {
+        display: inline-block;
+      }
+
+      a {
+        color: $light-gray;
+        padding-left:.5em;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  }
+  
+
+    p {
+      //height: 2em;
+      //display: table-cell;
+      //vertical-align: middle;
+      //line-height: 2em;
+
+      
+    }
 }
 
   // MEDIA QUERIES

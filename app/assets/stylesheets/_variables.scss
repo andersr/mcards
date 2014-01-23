@@ -2,4 +2,5 @@
 // ------------------------------
 $text-color:        #333;
 $link-color:     #0077cc;
+$ink-color-light: lighten( $link-color, 10% );
 $light-gray:     #a9a9a9;

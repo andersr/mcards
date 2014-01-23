@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Meditation Cards</title>
+  <title>Meditation Cards - Simple Medit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
   <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://i.icomoon.io/public/temp/1aa2509c22/UntitledProject1/style.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -20,7 +21,11 @@
         <div class="push"></div>
       </div>
     <footer>
-      <p>&copy; Copyright <%= Time.now.year %> Meditation Cards | <%= link_to "Twitter", "https://twitter.com/meditationcards" %></p>
+    <table>
+      <tr>
+          <td style:"vertical-align:middle;"><div class="copyright">&copy; <%= Time.now.year %> Meditation Cards </div><%= link_to "https://twitter.com/meditationcards" do %><span class="icon-twitter"></span><span class="screen-reader">Twitter</span><% end %> <%= mail_to "mailto:%68%65%6c%6c%6f@%6d%63%61%72%64%73.%63%6f" do %><span class="icon-mail2"></span><span class="screen-reader">Contact</span><% end %></td>
+        </tr>
+    </table>
     </footer>
     <script async defer>
       window.mySwipe = $('#card_collection').Swipe({

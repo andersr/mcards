@@ -1,0 +1,36 @@
+.hide {
+  display: none;
+}
+.font-larger {
+  font-size: larger;
+}
+
+.table {
+  display: table;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+}
+.align-middle {
+  vertical-align: middle;
+}
+
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: 700;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.screen-reader {
+    position: absolute; 
+    top: -9999px; 
+    left:-9999px; 
+}
