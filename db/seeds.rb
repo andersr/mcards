@@ -27,7 +27,7 @@ cards = Card.create([
   { phrase:"Is there someone who recently upset you in some way?",
     help:"If so, take a minute and visualize them in your mind, gently letting negative emotions drift away from you."},
 
-  { phrase:"Today, find one or more items in your home you can give away to a charity.",
+  { phrase:"Today, find one or more items in your home you can give away.",
     help: "Set them aside and make a note of taking them to a local charity."},
 
   { phrase:"What is something you're dreaming of achieving?",

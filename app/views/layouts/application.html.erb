@@ -10,13 +10,18 @@
   <%= favicon_link_tag '/favicon.ico' %>
 </head>
   <body>
-    <% if flash[:notice] %>
-      <p>
-        <%= flash[:notice] %>
-      </p>
-      <% end %>
-
-    <%= yield %>
+      <div class="wrapper">
+        <% if flash[:notice] %>
+          <p>
+            <%= flash[:notice] %>
+          </p>
+        <% end %>
+        <%= yield %>
+        <div class="push"></div>
+      </div>
+    <footer>
+      <p>&copy; Copyright <%= Time.now.year %> Meditation Cards</p>
+    </footer>
     <script async defer>
       window.mySwipe = $('#card_collection').Swipe({
         speed: 400,
