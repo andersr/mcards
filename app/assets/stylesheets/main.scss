@@ -5,12 +5,10 @@
 
 
 // http://stackoverflow.com/questions/6654958/make-body-have-100-of-the-browser-height 
-html{ 
+html, body{ 
   height: 100%;
 }
 body {
-  height: 100%;
-  min-height: 100%;
   background-color: #ffffff;
   font-size: 16px;
   margin:0;
@@ -21,7 +19,7 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -4em;
+  margin: 0 auto -3em; // negative value of the footer height
 }
 
 a {
