@@ -20,12 +20,8 @@
         <%= yield %>
         <div class="push"></div>
       </div>
-    <footer>
-    <table>
-      <tr>
-          <td style:"vertical-align:middle;"><div class="copyright">&copy; <%= Time.now.year %> Meditation Cards </div><%= link_to "https://twitter.com/meditationcards" do %><span class="icon-twitter"></span><span class="screen-reader">Twitter</span><% end %> <%= mail_to "mailto:%68%65%6c%6c%6f@%6d%63%61%72%64%73.%63%6f" do %><span class="icon-mail2"></span><span class="screen-reader">Contact</span><% end %></td>
-        </tr>
-    </table>
+    <footer><span class="middle">
+    &copy; <%= Time.now.year %> Meditation Cards </div><%= link_to "https://twitter.com/meditationcards", class:"icon" do %><span class="icon-twitter"></span><span class="screen-reader">Twitter</span><% end %> <%= mail_to "mailto:%68%65%6c%6c%6f@%6d%63%61%72%64%73.%63%6f" do %><span class="icon-mail2"></span><span class="screen-reader">Contact</span><% end %></span>
     </footer>
     <script async defer>
       window.mySwipe = $('#card_collection').Swipe({
