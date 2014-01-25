@@ -1,6 +1,6 @@
 cards = Card.create([
   { phrase:"Smile :-)",
-    help:"Today, whenever you feel down or anxious, try simply smiling.  It sounds weird but just try it."},
+    help:"Today, if you feel down or anxious, try simply smiling.  It sounds weird but just try it."},
 
   { phrase:"Breeeeathe...",
     help: "Take a minute and focus on your breath, slowly breathing in and out, letting your whole body relax."},
@@ -10,7 +10,7 @@ cards = Card.create([
 
   { phrase:"Remember, joy comes from within. No one else can make you happy."},
 
-  { phrase:"Give yourself credit for a recent achievement. You are doing the best you can, every day."},
+  { phrase:"Give yourself credit for a recent achievement.", help:"You are doing the best you can, every day."},
 
   { phrase:"What's something you're dreaming of achieving?", 
     help:"Take a minute and visualize yourself having already achieved it."},

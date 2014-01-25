@@ -32,6 +32,7 @@ class CardsController < ApplicationController
 
   def update
     @card = Card.find(params[:id])
+    @card.update(card_params)
 
     respond_to do |format|
       if @card.save
