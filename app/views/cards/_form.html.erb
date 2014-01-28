@@ -5,5 +5,7 @@
 <p><%= f.label :help %><br>
 <%= f.text_area :help, rows: 10, cols: 25 %>
 </p>
+<p><%= f.check_box :tweeted %> <%= f.label :tweeted, "Tweeted?" %></p>
+
 <%= f.submit %>
 <% end %>

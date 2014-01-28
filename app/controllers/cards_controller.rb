@@ -8,7 +8,7 @@ class CardsController < ApplicationController
   end
 
   def index
-    @cards = Card.all
+    @cards = Card.order("id ASC").all
   end
 
   def new
@@ -70,6 +70,6 @@ class CardsController < ApplicationController
   private
 
     def card_params
-      params.require(:card).permit(:phrase, :help)
+      params.require(:card).permit(:phrase, :help, :tweeted)
     end
 end

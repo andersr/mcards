@@ -2,4 +2,5 @@
 <form action="<%= cards_path %>" method="get">
 <%= render 'card_button' %>
 </form>
+<%= link_to "Edit", edit_card_path(@card) %> | <%= link_to "All Cards", cards_path %>
 </article>
