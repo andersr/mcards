@@ -1,6 +1,10 @@
 Mcards::Application.routes.draw do
+  resources :pages
+
   root "cards#random"
   get "cards/random" => "cards#random"
+
+  get 'about' => 'pages#about', as: :about
 
   resources :cards
 
